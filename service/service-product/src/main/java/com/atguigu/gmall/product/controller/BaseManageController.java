@@ -55,7 +55,7 @@ public class BaseManageController {
     }
 
     //根据id查询数据http://api.gmall.com/admin/product/getAttrValueList/{attrId}
-    @GetMapping("getAttrValueList/{attrId}")//修改修改
+    @GetMapping("getAttrValueList/{attrId}")//修改
     public Result getAttrValueList(@PathVariable Long attrId) {
         List<BaseAttrValue> baseAttrValueList= manageService.getAttrValueList(attrId);
         return Result.ok(baseAttrValueList);
